@@ -12,7 +12,7 @@
             <tr style="display:<%= i == 0 ? 'auto' : 'none' %>;" class="<%= attr %> <%= locale %> even">
               <td style="padding:4px;" colspan="2">
                 <%= Spree.t(:'i18n.this_file_language', :locale => locale) %> -
-                <%= Spree.t(attr, :locale => locale ) %>
+                <%= Spree.t(attr, :locale => locale, scope: [:spree_i18n, :attributes] ) %>
               </td>
             </tr>
             <tr style="display:<%= i == 0 ? 'auto' : 'none' %>;" class="<%= attr %> <%= locale %> odd">
